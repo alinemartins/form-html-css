@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 3 - CSS</title>
+    <link rel="stylesheet" href="./3-DESAFIO.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h2 class="title">Cadastro</h2>
+        <form action="" method="post" enctype="multipart/form-data">
+            <label>Nome
+                <input class="input-linha" name="name" type="text">
+            </label>
+
+            <label>E-mail
+                <input class="input-linha" name="e-mail" type="email" required>
+            </label>
+
+            <label>Idade
+                <input class="input-linha" name="idade" type="number" minlength="12" required>
+                </labe>
+
+                <label>Data de Nascimento
+                    <input class="input-linha" name="data-nascimento" type="date" required>
+                </label>
+
+                <label class="input-linha">Onde possui contas:
+                </label>
+
+                <label>Instagran
+                    <input name="Insta" type="checkbox" required>
+                </label>
+
+                <label>Facebook
+                    <input name="Fabe" type="checkbox" required>
+                </label>
+
+                <label>Youtube
+                    <input name="Youtube" type="checkbox" required>
+                </label>
+
+                <label class="input-linha">Sexo
+                </label>
+
+                <label>Masculino
+                    <input name="genero" type="radio" value="masculino" required>
+                </label>
+
+                <label>Feminino
+                    <input name="genero" type="radio" value="faminino" required>
+                </label>
+
+                <label class="input-linha">Cor dos olhos
+                    <input class="input-linha" name="cor-dos-olhos" type="color">
+                </label>
+
+                <label>Biográfia
+                    <textarea class="input-linha" name="bio"></textarea>
+                </label>
+
+                <label>Foto do perfil
+                    <input class="input-linha" name="photo-perfil" type="file" accept="images/*">
+                </label>
+
+                <label>Telefone
+                    <input class="input-linha" name="telephone" type="tel">
+                </label>
+
+                <label>Link do perfil
+                    <input class="input-linha" name="url" type="url" required>
+                </label>
+
+                <label>Senha
+                    <input class="input-linha" name="passoword" type="password" min="6" max="8" required>
+                </label>
+
+                <button class="reset" name="reset" type="reset">Limpar</button>
+                <button class="submit" name="enviar" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
